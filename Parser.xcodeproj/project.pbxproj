@@ -13,6 +13,9 @@
 		D34891682431EEAE009C4219 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34891662431EEAE009C4219 /* Main.storyboard */; };
 		D348916A2431EEB2009C4219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34891692431EEB2009C4219 /* Assets.xcassets */; };
 		D348916D2431EEB2009C4219 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D348916B2431EEB2009C4219 /* LaunchScreen.storyboard */; };
+		D34891752431EEE6009C4219 /* ParserOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34891742431EEE6009C4219 /* ParserOld.swift */; };
+		D34891772431EF16009C4219 /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = D34891762431EF16009C4219 /* file.json */; };
+		D38888832438CDB1002B9796 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38888822438CDB1002B9796 /* Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		D34891692431EEB2009C4219 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D348916C2431EEB2009C4219 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D348916E2431EEB2009C4219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D34891742431EEE6009C4219 /* ParserOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserOld.swift; sourceTree = "<group>"; };
+		D34891762431EF16009C4219 /* file.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file.json; sourceTree = "<group>"; };
+		D38888822438CDB1002B9796 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		D348915F2431EEAE009C4219 /* Parser */ = {
 			isa = PBXGroup;
 			children = (
-				D34891602431EEAE009C4219 /* AppDelegate.swift */,
-				D34891622431EEAE009C4219 /* SceneDelegate.swift */,
-				D34891642431EEAE009C4219 /* ViewController.swift */,
-				D34891662431EEAE009C4219 /* Main.storyboard */,
-				D34891692431EEB2009C4219 /* Assets.xcassets */,
-				D348916B2431EEB2009C4219 /* LaunchScreen.storyboard */,
+				D34891782431EF35009C4219 /* Support */,
+				D34891792431EF52009C4219 /* Presenters */,
+				D348917A2431EF5F009C4219 /* Model */,
 				D348916E2431EEB2009C4219 /* Info.plist */,
 			);
 			path = Parser;
+			sourceTree = "<group>";
+		};
+		D34891782431EF35009C4219 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D34891602431EEAE009C4219 /* AppDelegate.swift */,
+				D34891622431EEAE009C4219 /* SceneDelegate.swift */,
+				D34891692431EEB2009C4219 /* Assets.xcassets */,
+				D348916B2431EEB2009C4219 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D34891792431EF52009C4219 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				D34891642431EEAE009C4219 /* ViewController.swift */,
+				D34891662431EEAE009C4219 /* Main.storyboard */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		D348917A2431EF5F009C4219 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D34891742431EEE6009C4219 /* ParserOld.swift */,
+				D34891762431EF16009C4219 /* file.json */,
+				D38888822438CDB1002B9796 /* Parser.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D348916D2431EEB2009C4219 /* LaunchScreen.storyboard in Resources */,
+				D34891772431EF16009C4219 /* file.json in Resources */,
 				D348916A2431EEB2009C4219 /* Assets.xcassets in Resources */,
 				D34891682431EEAE009C4219 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +172,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34891752431EEE6009C4219 /* ParserOld.swift in Sources */,
+				D38888832438CDB1002B9796 /* Parser.swift in Sources */,
 				D34891652431EEAE009C4219 /* ViewController.swift in Sources */,
 				D34891612431EEAE009C4219 /* AppDelegate.swift in Sources */,
 				D34891632431EEAE009C4219 /* SceneDelegate.swift in Sources */,
