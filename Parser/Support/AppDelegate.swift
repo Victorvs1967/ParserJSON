@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         guard let fileName = Bundle.main.path(forResource: "file", ofType: "json") else { return true }
         
         guard let forecast = parse(fileName) else { return true }
-
         for weather in forecast {
             print("\(weather.city.name), \(weather.city.country)\n\(weather.list[0].feels_like.day), \(weather.list[0].weather[0].description)")
         }
